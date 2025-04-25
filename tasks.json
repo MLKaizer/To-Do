@@ -1,0 +1,34 @@
+{
+    "frontend": [
+      {
+        "id": "task1",
+        "labelText": "Aprender HTML",
+        "dateText": "hoy",
+        "project": {
+          "name": "Sitio personal",
+          "url": "#"
+        }
+      },
+      {
+        "id": "task2",
+        "labelText": "Practicar CSS",
+        "dateText": "mañana",
+        "project": {
+          "name": "Diseño web",
+          "url": "#"
+        }
+      }
+    ],
+    "backend": [
+      {
+        "id": "task3",
+        "labelText": "Estudiar Node.js",
+        "dateText": "pronto",
+        "project": {
+          "name": "API REST",
+          "url": "#"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,115 @@
+:root {
+    --back-ground-color:linear-gradient(#4255fe, #6470dc);
+    --table-list:#e7e4fd;
+    --Dark-mode:#000000;
+}
+.Dark-mode{
+  background: var(--Dark-mode);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px dashed orange !important;
+}
+body{
+    margin: 0;
+    /* background: var(--back-ground-color); */
+    height: 100vh; /*Toma todo el alto de la ventana*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .task-app{
+     background: var(--table-list); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.task-app__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 15px 20px;/* arriba derecha abajo izquierda*/
+}
+.task-app__button_share{
+   width: 5rem;
+   height: 1.6rem;
+   border-radius: 0.2rem;
+   border: #727695;
+}
+.task-app__button_share i{
+    margin-right: 3px;
+}
+.task-app_container_list{
+  max-width: 50rem;
+  margin: 0 auto; /* ← Esto centra el contenido horizontalmente */
+  
+}
+.task-app_container_list_header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border-bottom: 3px #958b8b solid;
+}
+.task-app__tasks{
+    list-style: none;
+    /* border-top: 3px #958b8b solid; */
+    padding-top: 1rem;
+    max-height: 35rem;
+    overflow-y: scroll;
+
+}
+.task-app__task__item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .task-app__checkbox {
+    margin-left: 2rem;
+    margin-right: 10px; 
+  }
+  
+  .task-app__label,
+  .task-app__span,
+  .task-app__project-link {
+    flex: 1; /* Asegura que estos elementos ocupen el mismo espacio que las celdas en el header */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+  }
+  
+  .task-app__span {
+    margin-right: 20px; /* Espacio entre la fecha y el proyecto */
+  }
+  
+  .task-app__project-link {
+    text-decoration: none;
+    color: #4255fe; /* Puedes personalizar el color */
+  }
+  .task-app__tasks h3 {
+    margin: 0 0 1rem 5rem;
+
+  }
+  .button-add{
+    border-radius: 2rem;
+    margin-left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    background: ghostwhite;
+  }
+  #menu{
+    height: 5rem;
+    width: 2rem;
+    background: #958b8b;
+    position: relative;
+    bottom: 6rem;
+  }
+  .hidden{
+    display: none;
+  };
+  .container-modal {
+    background: #f0f0f0;
+    border: 2px dashed blue;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }

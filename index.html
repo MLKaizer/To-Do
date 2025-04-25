@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="accions.js"></script>
+
+</head>
+<body id="mode-app">
+    <main class="task-app">
+        <header class="task-app__header">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <h1 class="task-app-__title"> My task</h1>
+            <!-- <button class="task-app__button_share">
+                <i class="fas fa-lock"></i> Share
+            </button> -->
+            <i class="fas fa-bell icono-bell"></i>
+        </header>
+        <section class="task-app_container_list" id="container">
+            <header class="task-app_container_list_header">
+                <h3 class="task-app__task-title">Task Name</h3>
+                <h3 class="task-app__task-due">Due Date</h3>
+                <h3 class="task-app__task-project">Project</h3>
+            </header>
+            <!-- <ul class="task-app__tasks" id="ListTask"> 
+                <h3>categoria</h3>
+                <li class="task-app__task__item">
+                    <input type="checkbox" id="task1" class="task-app__checkbox">
+                    <label for="task1" class="task-app__label">Launch new home page</label>
+                    <span class="task-app__span">today</span>
+                    <a href="" class="task-app__project-link">Website redesin</a>
+                </li>
+            </ul> -->
+        </section>
+        <div>
+            <button class="button-add" onclick="buttonMenu()">+</button>
+            <ul id="menu" class="hidden">
+                <li>
+                    <button>add categoria</button>
+                </li>
+            </ul>
+          
+        </div>
+        <button onclick="chanseMode()">them</button>
+    </main>
+</body>
+</html>
